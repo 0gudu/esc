@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 95vh;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            background-color: black;
+            overflow: hidden;
+
+        }
+        .b {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+
+        }
+        .boneco {
+            position: absolute;
+            top: 300px;
+            left: 350px;
+        }
+    </style>
+</head>
+<body onmousemove="MoveBoneco(event)">
+    
+    <div class="b">
+        <img id="brasil"  src="mapa_brasil.jpg" usemap="#meumapa">
+        <img class="boneco" id="boneco" src="boneco.gif" width="80px">
+        <map name="meumapa">
+            <area title="visite o Rio Grande do Sul" shape="circle" coords="260, 440, 20" href="https://youtu.be/EtTbS-KdcrE">
+            <area title="visite Santa Catarina" shape="circle" coords="300,410, 20" href="https://www.youtube.com/@rudiewilly">
+            <area title="Visite o Pernambuco" shape="circle" coords="448, 181, 10" href="https://www.youtube.com/watch?v=fh2VI3rfaC0&ab_channel=GordinhoSecsy">
+            <area title="Visite a Paraiba" shape="circle" coords="478, 163, 10" href="https://pt.wikipedia.org/wiki/Para%C3%ADba">
+            <area title="Visite o Rio Grande do Norte" shape="circle" coords="470, 148, 10" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte">
+            <area title="Visite o Alagoas" shape="circle" coords="483, 205, 10" href="https://pt.wikipedia.org/wiki/Alagoas">
+            <area title="Visite o Sergipe" shape="circle" coords="472, 222, 10" href="https://pt.wikipedia.org/wiki/Club_Sportivo_Sergipe">
+            <area title="Visite a Bahia" shape="circle" coords="395, 226, 20" href="https://www.esporteclubebahia.com.br/">
+            <area title="Visite Minas Gerais" shape="circle" coords="365, 312, 20" href="https://brasilescola.uol.com.br/brasil/minas-gerais.htm">
+            <area title="Visite São Paulo" shape="circle" coords="365, 312, 20" href="https://twitter.com/SaoPauloFC">
+            <area title="Visite o Mato Grosso do Sul" shape="circle" coords="238, 322, 20" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul">
+            <area title="Visite o Mato Grosso" shape="circle" coords="230, 233, 20" href="https://pt.wikipedia.org/wiki/Mato_Grosso">
+            <area title="Visite Rondônia" shape="circle" coords="137, 210, 20" href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia">
+            <area title="Visite o Acre" shape="circle" coords="42, 183, 20" href="https://pt.wikipedia.org/wiki/Acre">
+            <area title="Visite o Roraima" shape="circle" coords="160, 46, 20" href="https://pt.wikipedia.org/wiki/Roraima">
+            <area title="Visite o Amazonas" shape="circle" coords="117, 117, 20" href="https://www.infoescola.com/wp-content/uploads/2009/10/floresta-tropical.jpg">
+            <area title="Visite o Ceará" shape="circle" coords="430, 136, 20" href="https://twitter.com/CearaSC?s=20">
+            <area title="Visite o Piauí" shape="circle" coords="388, 168, 20" href="https://piaui.folha.uol.com.br/">
+            <area title="Visite o Maranhão" shape="circle" coords="362, 132, 20" href="https://www.facebook.com/MaranhaoESport">
+            <area title="Visite o Tocantins" shape="circle" coords="320, 195, 20" href="https://pt.wikipedia.org/wiki/Tocantins">
+            <area title="Visite o Amapá" shape="circle" coords="277, 50, 20" href="https://pt.wikipedia.org/wiki/Amap%C3%A1">
+            <area title="Visite o Rio de Janeiro" shape="circle" coords="399, 363, 20" href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">
+            <area title="Visite o Espirito Santo" shape="circle" coords="428, 324, 20" href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)">
+            <area title="Visite Goias" shape="circle" coords="300, 276, 20" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s">
+            <area title="Visite o Distrito Federal" shape="circle" coords="350, 271, 20" href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)">
+            <area title="Visite o Pará" shape="circle" coords="264, 134, 20" href="https://pt.wikipedia.org/wiki/Par%C3%A1">
+        </map>
+   </div>
+</body>
+<script>
+    function MoveBoneco()
+    {
+        x = event.pageX;
+        y = event.pageY;
+        boneco.style.left = (x + 2) + "px";
+        boneco.style.top = (y + 2) + "px";
+    }
+</script>
+</html>
