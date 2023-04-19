@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {  
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #CCC;
+  font-family: "Tahoma", sans-serif;
+}
+
+.wrapper span {
+  display: block;
+  color: #CCC;
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+}
+
+.search {
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid #CCC;
+}
+
+.search-input {
+  border: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <span>Pesquisa</span>
+    
+        <div class="search">
+          <input class="search-input" list="movies" placeholder="Pesquisa..."><i class="fa fa-search"></i>
+        </div>
+    
+        <datalist id="movies">
+           <option value="A Era do Gelo">A Era do Gelo</option>
+           <option value="O Lobo de Wall Street">O Lobo de Wall Street</option>
+           <option value="12 Horas">12 Horas</option>
+           <option value="12 Rounds">12 Rounds</option>
+           <option value="A Dama de ferro">A Dama de ferro</option>
+           <option value="2 Filhos de Francisco">2 Filhos de Francisco</option>
+           <option value="Exterminador do Futuro">Exterminador do Futuro</option>
+           <option value="21 Gramas">21 Gramas</option>
+           <option value="1408">1408</option>
+        </datalist>
+      </div>
+</body>
+</html>
