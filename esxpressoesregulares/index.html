@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .certo {
+            background-color: green;
+        }
+        .errado {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    DIGITE SEU CEP:
+    <input type="text" id="cep" onkeyup="ValidarCEP();"> <br>
+    DIGITE SEU NUMERO:
+    <input type="text" id="numero" onkeyup="ValidarNUMERO();"> <br>
+    DIGITE SEU CPF:
+    <input type="text" id="cpf" onkeyup="ValidarCPF();"> <br>
+</body>
+<script>
+     function ValidarCEP()
+     {
+        expressa1o = /[0-9]{5}-[0-9]{3}$/g; //ACESSE O SITE regex101.com;
+        texto = cep.value;
+        
+        if (texto.length==5)
+        {
+            cep.value = texto + "-";
+        }
+        resposta = expressa1o.test(texto);
+        if (resposta==true)
+        {
+            cep.classList.remove('errado');
+            cep.classList.add('certo');
+        }
+        if (resposta==false)
+        {
+            cep.classList.remove('certo');
+            cep.classList.add('errado');
+        }
+
+    }
+        function ValidarNUMERO()
+     {
+        expressa2o = /\([0-9]{2}\) 9 [0-9]{4}-[0-9]{4}$/g; //ACESSE O SITE regex101.com;
+        textwo = numero.value;
+    
+        if (textwo.length==2)
+        {
+            numero.value = "(" + textwo + ") ";
+        }
+        if (textwo.length==4)
+        {
+            numero.value = textwo + " ";
+        }
+        if (textwo.length==6)
+        {
+            numero.value = textwo + " ";
+        }
+        if (textwo.length==11)
+        {
+            numero.value = textwo + "-";
+        }
+        respostwa = expressa2o.test(textwo);
+        if (respostwa==true)
+        {
+            numero.classList.remove('errado');
+            numero.classList.add('certo');
+        }
+        if (respostwa==false)
+        {
+            numero.classList.remove('certo');
+            numero.classList.add('errado');
+        }
+    }
+        function ValidarCPF()
+     {
+        expressa3o = /[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}$/g; //ACESSE O SITE regex101.com;
+        texteo = cpf.value;
+        
+        if (texteo.length==3)
+        {
+            cpf.value = texteo + ".";
+        }
+        if (texteo.length==7)
+        {
+            cpf.value = texteo + ".";
+        }
+        if (texteo.length==11)
+        {
+            cpf.value = texteo + "-";
+        }
+
+
+
+        respossta = expressa3o.test(texteo);
+
+
+        if (respossta==true)
+        {
+            cpf.classList.remove('errado');
+            cpf.classList.add('certo');
+        }
+        if (respossta==false)
+        {
+            cpf.classList.remove('certo');
+            cpf.classList.add('errado');
+        }
+        
+     }
+</script>
+</html>
