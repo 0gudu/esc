@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo Javascript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="janelinha" id="janelinha">
+        <div style="width: 100%; height: 15%; background-color: aqua; " onmousemove="pos()"></div>
+        Seu email é: <span id="txt"> </span> <br>
+        A soma é: <span id="result"> </span> <br>
+        <img onclick="fechar()" src="x.webp" width="30px" style="position: absolute; right: 0px; top: 0px;">
+    </div> 
+
+    Digite seu e-mail:
+    <input type="text" id="email"> <br>
+    
+    <button onclick="mostrar()">
+         <img src="joia.png" width="30px">
+         <br>
+         Alerta
+    </button>
+
+    <button onclick="mostrarjanelinha()"> 
+        <img src="janela.png" width="30px">
+        <br>
+        janelinha
+    </button>
+    
+    <button onclick="somar()">
+        <img src="soma.webp" width="30px">
+        <br>
+        Somar
+    </button>
+
+    <button onclick="imprimir()">
+        <img src="impressora.png" width="30px">
+        <br>
+        Imprimir
+    </button>
+    
+    <div class="texto1">Esse é o texto 1</div>
+    <div class="texto2">Esse é o texto 2</div>
+    <br>
+    <button class="bt">Botãozito</button>
+</body>
+<script src="script.js"></script>
+</html>
