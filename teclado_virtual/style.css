@@ -1,0 +1,301 @@
+body {
+    width: 99%;
+    height: 96.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.text {
+    width: 100%;
+    height: 10%;
+    font-size: 20vh;
+}
+
+.d1 {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: first baseline;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+}
+.esc {
+    width: 10%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.esc:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.d2 {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bbackspace {
+    width: 8%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;border-radius: 5px;
+    border-radius: 5px;
+}
+.bbackspace:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.d3 {
+    width: 100%;
+    height: 17%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+   
+
+}
+
+.btab {
+    width: 8%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+    
+}
+.btab:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.bshift {
+    width: 14%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.bshift:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.b {
+    width: 6%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+    flex-direction: column;
+}
+.b:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.cimab1 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cimab {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.bctrl {
+    width: 15%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.bctrl:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.bspace {
+    width: 30%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.bspace:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.balt {
+    width: 7%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.balt:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.bdir {
+    width: 6%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+    flex-direction: column;
+}
+.bdir:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.d4 {
+    width: 100%;
+    height: 17%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.bpesq {
+    width: 9%;
+    height: 90%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3vh;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.bpesq:hover
+{
+    background-color: gray;
+    cursor: pointer;
+}
+.d5 {
+    width: 100%;
+    height: 17%;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.d6 {
+    width: 100%;
+    height: 17%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
