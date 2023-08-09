@@ -26,7 +26,10 @@
 					{
 						console.log(lista[x].nome);     // Lista cada nome dentro de "empregados"
 						console.log(lista[x].idade);    // Poderíamos usar innerHTML ou inserir
-						console.log(lista[x].sexo);     // linhas numa <table>
+						console.log(lista[x].sexo);
+						console.log(lista[x].telefone);
+						console.log(lista[x].email);
+						console.log(lista[x].cidade);     // linhas numa <table>
 						console.log("  ");
 					}
 				},
@@ -58,6 +61,9 @@
 		Nome:   <input type="text"   id="nome"  name="nome"  value="" />
 		Idade:  <input type="text"   id="idade" name="idade" value="" />
 		Sexo:  <input  type="text"   id="sexo"  name="sexo"  value="" />
+		Telefone:  <input  type="text"   id="telefone"  name="telefone"  value="" />
+		Email:  <input  type="text"   id="email"  name="email"  value="" />
+		Cidade:  <input  type="text"   id="cidade"  name="cidade"  value="" />
 
 		<input type="button" name="enviar" value="Enviar" onclick="Listar();" />
 

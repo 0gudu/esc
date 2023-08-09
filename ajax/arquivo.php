@@ -3,6 +3,9 @@
 $nome  = $_POST["nome"];    // Campos "name" inseridos no <form>
 $idade = $_POST["idade"];
 $sexo  = $_POST["sexo"];
+$telefone  = $_POST["telefone"];
+$email  = $_POST["email"];
+$cidade  = $_POST["cidade"];
 
 $empregados = [];  // Variável usada para guardar os dados acima no formato JSON.
 
@@ -14,7 +17,10 @@ $resposta =
       [
          "nome"  => $nome,
          "idade" => $idade,
-         "sexo"  => $sexo
+         "sexo"  => $sexo,
+         "telefone"  => $telefone,
+         "email" => $email,
+         "cidade"  => $cidade
       ];
 
 array_push($empregados, $resposta);
