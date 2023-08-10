@@ -30,16 +30,6 @@
 
     <br> <br>
 
-    <table align="center" width="400px" border="1" id="tabela1">
-        <tr>
-            <td> MATRÍCULA </td>  <td> NOME </td>
-        </tr>
-        <tr>
-            <td>cu</td><td>cu</td>
-            
-
-        </tr>
-    </table>
 
 </body>
 <script type="text/javascript" src="../jquery-1.8.2.min.js"></script>
@@ -57,19 +47,7 @@
                 success: function(meu_json)
 				{
 					
-					var valores = meu_json;          // Vem do arquivo.php
-					var lista = valores.empregados;  // Pega os dados dos "empregados"
-                    var tabela = document.getElementById("tabela1");
-                    
-					for(x=0;x<lista.length;x++)
-					{
-						var numeroLinhas = tabela.rows.length
-                        var linha = tabela1.insertRow(numeroLinhas);
-                        var coluna1 = linha.insertCell(0);
-                        var coluna2 = linha.insertCell(1);  
-                        coluna2.innerHTML = lista[x].nome;
-                        coluna1.innerHTML = lista[x].matricula;
-					}
+					
 				},
 				error: function(xhr, status, error) {
 					// Aqui poderíamos preencher uma <div> com o innerHTML por exemplo
