@@ -24,46 +24,37 @@
         DIGITE O NOME: <input type="text" name="nome" id="nome" value="">
         <br>   <br>
         
-        <input type="button" name="enviar" value="Enviar" onclick="Listar();" />
+        <input type="button" name="enviar" value="Enviar" id="butao" />
 
     </form>
-
+    
     <br> <br>
-
 
 </body>
 <script type="text/javascript" src="../jquery-1.8.2.min.js"></script>
 <script>
-    function Listar(){
-			// A variável "dados" conterá todos os campos do <form id="form1">
-			var dados = $('#form1').serialize(); // TODOS OS CAMPOS DO <form> DEVEM TER 'name='
-			
-			$.ajax({
-				type: "POST",
-                url: "arquivo.php",
-				data: dados,
-				dataType: 'json',
-				                
-                success: function(meu_json)
-				{
-					
-					
-				},
-				error: function(xhr, status, error) {
-					// Aqui poderíamos preencher uma <div> com o innerHTML por exemplo
-            		console.error('Ocorreu um erro ao enviar os dados: ' + error);
-          		},
-				beforeSend: function(xhr) {
-					// Faz algo antes do envio, como exibir uma animação por exemplo.
-				},
-				complete: function(xhr, status) {
-					// Faz algo após a conclusão, como ocultar uma animação por exemplo. 
-					// Vai ser executado mesmo se ocorrer um erro.
-				},
-				timeout: 5000    // Define um tempo limite de 5 segundos (5000 milissegundos)
-			});
-			
-			
-		}
+    $("#butao").click(function() {
+        var nome = $("#nome").val();
+        var matricula = $("#matricula").val();
+       
+        var data = {
+            nome: nome,
+            matricula: matricula
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "arquivo.php", 
+            data: data,
+            success: function(response) {
+                $("#matricula").val("");
+                $("#nome").val("");
+            },
+            error: function(xhr, status, error) {
+                console.error("An error occurred: " + error);
+            }
+        });
+    });
+
 </script>
 </html>
